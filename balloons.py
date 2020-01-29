@@ -72,7 +72,7 @@ def neural_network(data, categories_list):
     model = tf.Sequential([
         tf.layers.Dense(32, input_shape=(8,)),
         tf.layers.Activation('relu'),
-        tf.layers.Dense(10),
+        tf.layers.Dense(2),
         tf.layers.Activation('softmax'),
     ])
     model.compile(optimizer='adam',
